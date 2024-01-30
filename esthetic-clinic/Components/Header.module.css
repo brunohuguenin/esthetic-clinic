@@ -1,0 +1,47 @@
+.header {
+  background: #FA82A6;
+}
+
+
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav ul{
+  display: flex;
+}
+
+.nav ul li {
+  font-size: 1.25rem;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+
+/* Main */
+.main {
+  background: #E39FB1;
+}
+
+.content {
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divimg {
+  max-height: 300px;
+}
+
+
+

@@ -1,0 +1,182 @@
+body, h1, h2, p, ul a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ a {
+  text-decoration: none;
+ }
+
+ img {
+  display: block;
+  max-width: 100%;
+ }
+
+header {
+  background: #FA82A6;
+}
+
+/* Menu */
+
+ .container {
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+
+ .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 15px 10px;
+ }
+
+ .menu-nav ul {
+  display: flex;
+ }
+
+ .menu-nav a {
+  font-size: 1.5rem;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+ }
+
+ .menu-nav a:hover {
+  color: #F6E5EA;
+ }
+
+/* Main */
+main {
+  background: #F1EBEC;
+}
+ .main-content {
+  display: flex;
+  justify-content: space-between;
+  
+ }
+
+ .main-content img {
+  margin-top: 20px;
+  width: 500px;
+ }
+
+ .main-content h1 {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 4.0rem;
+  color: #FA82A6;
+ }
+
+ .main-content h2 {
+  text-align: center;
+  color: #FA82A6;
+  font-size: 3.2rem;
+ }
+
+ /* Slide */
+ .slide-wrapper {
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+
+.slide-content {
+  width: 100vw;
+  flex-shrink: 0;
+  max-width: 600px;
+  margin: 0 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+  opacity: .6;
+  transform: scale(.9);
+  transition: .3s;
+} 
+
+.slide-content h2 {
+  color: #FA82A6;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.slide-content p {
+  padding: 0 35px 30px 35px;
+  font-size: 1.25rem;
+  /* text-align: start; */
+  color: #7c7c7c;
+  text-indent: 2rem;
+  text-align: justify;
+  
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control='slide'] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control='slide'] li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #F6E5EA;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control='slide'] li.active a, [data-control='slide'] li a:hover {
+  background: #FA82A6;
+}
+
+/* Sobre */
+.sobre {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-content {
+  width: 600px;
+}
+
+.sobre-content h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  color:#FA82A6
+}
+
+.sobre-content p {
+  text-indent: 2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  color: #7c7c7c;
+}
+
+.sobre img {
+  border-radius: 0 4px;
+  height: 700px;
+  width: 500px;
+}
