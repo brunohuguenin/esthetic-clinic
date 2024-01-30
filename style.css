@@ -120,7 +120,6 @@ main {
   color: #7c7c7c;
   text-indent: 2rem;
   text-align: justify;
-  
 }
 
 .slide li.active {
@@ -176,7 +175,54 @@ main {
 }
 
 .sobre img {
-  border-radius: 0 4px;
-  height: 700px;
+  border-radius: 4px;
+  height: 600px;
   width: 500px;
+}
+
+/* Services */
+.services {
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1 1 300px;
+  margin: 50px 20px; 
+}
+
+.service-item h2 {
+  font-size: 2rem;
+  color: #FA82A6;
+  margin-bottom: 20px;
+}
+
+.service-item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 20px;
+  background: blue;
+}
+
+.service-item:nth-of-type(3n+1) h2::before {
+  background: #F6E5EA;
+}
+
+.service-item:nth-of-type(3n+2) h2::before {
+  background: #F6E5EA;
+}
+
+.service-item:nth-of-type(3n+3) h2::before {
+  background: #F6E5EA;
+}
+
+.service-item p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #7c7c7c;
+  text-indent: 2rem;
+  text-align: justify;
 }
