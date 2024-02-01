@@ -58,7 +58,6 @@ main {
  .main-content {
   display: flex;
   justify-content: space-between;
-  
  }
 
  .main-content img {
@@ -79,17 +78,17 @@ main {
   font-size: 3.2rem;
  }
 
- @media (max-width: 600px) {
+ @media (max-width: 400px) {
   .main-content img {
-    max-width: 300px;
+    max-width: 200px;
   }
   .main-content h1 {
-    padding-top: 50px;
-    font-size: 2.5rem;
+    padding-top: 40px;
+    font-size: 1.5rem;
   }
-
   .main-content h2 {
-    font-size: 1.75rem;
+    padding-top: 5px;
+    font-size: 1.2rem;
   }
  }
 
@@ -161,13 +160,25 @@ main {
   background: #FA82A6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .slide-wrapper {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .slide-content {
-    max-width: 400px;
-    height: 520px;
+    max-width: 260px;
+    height: 450px;
+    margin: 0 10px;
+  }
+  .slide-content h2 {
+    font-size: 1.2rem;
+  }
+  .slide-content p {
+    font-size: 1rem;
+    padding: 0 20px 10px 20px;
+  }
+  [data-control='slide'] li a {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -203,10 +214,23 @@ main {
   width: 500px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 400px) {
   .sobre {
     display: block;
-    max-width: 500px;
+    max-width: 320px;
+  }
+  .sobre h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  .sobre p {
+    font-size: 1rem;
+  }
+  .sobre img {
+    height: 250px;
+    width: 300px;
+    margin: 20px auto;
+    padding-top: 20px;
   }
 }
 
@@ -234,7 +258,6 @@ main {
   width: 8px;
   height: 30px;
   margin-right: 20px;
-  background: blue;
 }
 
 .service-item:nth-of-type(3n+1) h2::before {
@@ -258,9 +281,28 @@ main {
   border-bottom:  2px solid #F6E5EA;
 }
 
+@media (max-width: 400px) {
+  .services {
+    margin: 40px 10px;
+  }
+  .service-item {
+    margin: 20px 20px;
+  }
+  .service-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .service-item h2::before {
+    width: 5px;
+    height: 17px;
+    margin-right: 10px;
+  }
+  .service-item p {
+    font-size: 1rem;
+  }
+}
 
 /* Footer */
-
 footer {
   background: #FA82A6;
 }
@@ -284,4 +326,15 @@ footer {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+@media (max-width: 400px) {
+  .footer-content {
+    display: block;
+    max-width: 320px;
+  }
+  .footer-iten p {
+
+  }
+  
 }
