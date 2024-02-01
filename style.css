@@ -218,6 +218,7 @@ main {
   .sobre {
     display: block;
     max-width: 320px;
+    padding-top: 50px;
   }
   .sobre h1 {
     font-size: 1.5rem;
@@ -227,7 +228,7 @@ main {
     font-size: 1rem;
   }
   .sobre img {
-    height: 250px;
+    height: 270px;
     width: 300px;
     margin: 20px auto;
     padding-top: 20px;
@@ -305,6 +306,13 @@ main {
 /* Footer */
 footer {
   background: #FA82A6;
+  display: block;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
 }
 
 .footer-content {
@@ -313,13 +321,22 @@ footer {
   max-width: 800px;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 0;
+  padding-top: 20px;
 }
 
 .footer-iten {
   display: flex;
   padding: 10px 0;
   padding: 10px;
+}
+
+.footer-iten a {
+  color: #1E1D1D;
+  cursor: pointer;
+}
+
+.footer-iten a:hover {
+  color: #fff;
 }
 
 .icon {
@@ -333,8 +350,7 @@ footer {
     display: block;
     max-width: 320px;
   }
-  .footer-iten p {
-
+  .footer-iten a {
   }
-  
+
 }
