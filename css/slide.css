@@ -65,13 +65,13 @@
   background: #FA82A6;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .slide-wrapper {
     margin-top: 10px;
   }
   .slide-content {
     max-width: 260px;
-    height: 450px;
+    height: 430px;
     margin: 0 10px;
   }
   .slide-content h2 {

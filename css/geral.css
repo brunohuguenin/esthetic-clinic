@@ -58,6 +58,9 @@ header {
 
 
  @media (max-width: 600px) {
+  .menu {
+    max-width: 20rem;
+  }
   #button-mobile {
     display: block;
     height: 2px;
@@ -83,7 +86,7 @@ header {
     right: 0;
     background: #FA82A6;
     height: 130px;
-    top: 66px;
+    top: 65px;
     position: absolute;
     animation: dropdownMenu .5s;
    }   
@@ -135,20 +138,24 @@ main {
   font-size: 3.2rem;
  }
 
- @media (max-width: 500px) {
+ @media (max-width: 600px) {
+  .main-content {
+    max-width: 20rem;
+  }
   .main-content img {
-    max-width: 200px;
+    max-width: 12rem;
   }
   .main-content h1 {
     padding-top: 40px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .main-content h2 {
     padding-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
  }
 
+/* Sobre */
 .sobre {
   padding-top: 80px;
   display: flex;
@@ -180,10 +187,11 @@ main {
   width: 500px;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 600px) {
   .sobre {
     display: block;
-    max-width: 320px;
+    max-width: 20rem;
+    margin: 0 auto;
     padding-top: 50px;
   }
   .sobre h1 {
@@ -248,7 +256,7 @@ main {
   border-bottom:  2px solid #F6E5EA;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .services {
     margin: 40px 10px;
   }
@@ -311,12 +319,10 @@ footer p {
   margin-right: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .footer-content {
     display: block;
-    max-width: 320px;
-  }
-  .footer-iten a {
+    max-width: 20rem;
   }
 
 }
