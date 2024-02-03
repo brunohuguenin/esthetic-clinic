@@ -56,10 +56,19 @@ header {
   display: none;
  }
 
+ @media (min-width: 601px) and (max-width: 768px) {
+  .menu {
+    padding: 0 25px;
+  }
+  #nav  a {
+    font-size: 1rem;
+  }
+}
+
 
  @media (max-width: 600px) {
   .menu {
-    max-width: 20rem;
+    padding: 0 25px;
   }
   #button-mobile {
     display: block;
@@ -70,16 +79,12 @@ header {
     box-shadow: 0 6px #fff, 0 -6px #fff;
     transition: transform .3s;
    }
-
-
    #button-mobile.active {
    transform: rotate(90deg); 
   }
-
   nav {
     padding: 5px 0;
   }
-
    #menu-list {
     display: none;
     width: 100%;
@@ -138,16 +143,34 @@ main {
   font-size: 3.2rem;
  }
 
- @media (max-width: 600px) {
+
+ @media (min-width: 500px) and (max-width: 700px) {
   .main-content {
-    max-width: 20rem;
+    padding: 0 25px;
+  }
+  .main-content img {
+    max-width: 13rem;
+  }
+  .main-content h1 {
+    padding-top: 60px;
+    font-size: 2rem;
+  }
+  .main-content h2 {
+    padding-top: 5px;
+    font-size: 1.5rem;
+  }
+}
+
+ @media (max-width: 499px) {
+  .main-content {
+    padding: 0 25px;
   }
   .main-content img {
     max-width: 12rem;
   }
   .main-content h1 {
-    padding-top: 40px;
-    font-size: 1.25rem;
+    padding-top: 60px;
+    font-size: 1.3rem;
   }
   .main-content h2 {
     padding-top: 5px;
@@ -163,7 +186,8 @@ main {
 }
 
 .sobre-content {
-  max-width: 600px;
+  flex: 1 1 300px;
+  margin: 50px 20px;
 }
 
 .sobre-content h1 {
@@ -174,11 +198,11 @@ main {
 }
 
 .sobre-content p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #7c7c7c;
   text-indent: 2rem;
   text-align: justify;
-  line-height: 1.5rem;
-  font-size: 1.25rem;
-  color: #7c7c7c;
 }
 
 .sobre img {
@@ -187,26 +211,28 @@ main {
   width: 500px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
   .sobre {
     display: block;
-    max-width: 20rem;
-    margin: 0 auto;
-    padding-top: 50px;
+    padding: 0 5px;
   }
-  .sobre h1 {
+  .sobre-content h1 {
     font-size: 1.5rem;
     padding-bottom: 20px;
   }
-  .sobre p {
+  .sobre-content p {
     font-size: 1rem;
   }
-  .sobre img {
-    height: 270px;
-    width: 300px;
-    margin: 20px auto;
-    padding-top: 20px;
+
+  .sobre-img {
+    max-width: 370px;
+    margin: 0 auto;
   }
+  .sobre img {
+    height: 400px;
+  }
+
+  
 }
 
 /* Services */
@@ -301,7 +327,6 @@ footer p {
 .footer-iten {
   display: flex;
   padding: 10px 0;
-  padding: 10px;
 }
 
 .footer-iten a {
@@ -319,10 +344,19 @@ footer p {
   margin-right: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+
   .footer-content {
     display: block;
-    max-width: 20rem;
+    max-width: 15rem;
+    padding-top: 50px;
+  }
+  .footer-iten {
+    font-size: .875rem;
+  }
+
+  footer p {
+    font-size: .75rem;
   }
 
 }
