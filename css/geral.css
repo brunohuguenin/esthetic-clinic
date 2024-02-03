@@ -228,7 +228,7 @@ main {
   width: 500px;
 }
 
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 501px) and (max-width: 768px) {
   .sobre {
     display: block;
     padding: 0 5px;
@@ -242,11 +242,12 @@ main {
   }
 
   .sobre-img {
-    max-width: 370px;
+    max-width: 440px;
     margin: 0 auto;
   }
   .sobre img {
-    height: 400px;
+    max-width: 100%;
+    max-height: 460px;
   }
 }
 
