@@ -476,18 +476,21 @@ footer p {
 }
 
 @media (max-width: 500px) {
-
   .footer-content {
-    display: block;
-    max-width: 15rem;
-    padding-top: 50px;
+    display: flex;
+    padding: 30px ;
   }
   .footer-iten {
-    font-size: .875rem;
+    font-size: .7rem;
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
   }
 
   footer p {
-    font-size: .75rem;
+    font-size: .7rem;
   }
 
 }
