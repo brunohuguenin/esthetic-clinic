@@ -144,15 +144,32 @@ main {
  }
 
 
- @media (min-width: 500px) and (max-width: 700px) {
+ @media (min-width: 601px) and (max-width: 768px) {
   .main-content {
     padding: 0 25px;
   }
   .main-content img {
-    max-width: 13rem;
+    max-width: 18rem;
   }
   .main-content h1 {
-    padding-top: 60px;
+    padding-top: 50px;
+    font-size: 2.3rem;
+  }
+  .main-content h2 {
+    padding-top: 5px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .main-content {
+    padding: 0 25px;
+  }
+  .main-content img {
+    max-width: 15rem;
+  }
+  .main-content h1 {
+    padding-top: 53px;
     font-size: 2rem;
   }
   .main-content h2 {
@@ -211,6 +228,28 @@ main {
   width: 500px;
 }
 
+@media (min-width: 500px) and (max-width: 600px) {
+  .sobre {
+    display: block;
+    padding: 0 5px;
+  }
+  .sobre-content h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  .sobre-content p {
+    font-size: 1.2rem;
+  }
+
+  .sobre-img {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+  .sobre img {
+    height: 400px;
+  }
+}
+
 @media(max-width: 500px) {
   .sobre {
     display: block;
@@ -231,8 +270,6 @@ main {
   .sobre img {
     height: 400px;
   }
-
-  
 }
 
 /* Services */
