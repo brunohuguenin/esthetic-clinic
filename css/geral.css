@@ -26,7 +26,6 @@ header {
   height: 50px;
 }
 
-/* Menu */
 .menu {
   max-width: 1100px;
   margin: 0 auto;
@@ -113,11 +112,9 @@ header {
     position: absolute;
     animation: dropdownMenu .5s;
    }   
-
    #nav.active #menu-list {
     display: block;
    }
-
    @keyframes dropdownMenu {
     from {
       opacity: 0;
@@ -126,14 +123,12 @@ header {
       opacity: 1;
     }
    }
-
    #nav.active #menu-list a {
     padding: 0 0 10px 10px;
     font-size: 1.2rem;
   }
  }
 
-/* Main */
 main {
   background: #F1EBEC;
 }
@@ -169,7 +164,6 @@ main {
    .main-tittle h1 {
     font-size: 3rem;
    }
-  
    .main-tittle h2 {
     font-size: 2.5rem;
    }
@@ -189,7 +183,6 @@ main {
    .main-tittle h1 {
     font-size: 2.3rem;
    }
-  
    .main-tittle h2 {
     font-size: 2rem;
    }
@@ -200,7 +193,6 @@ main {
     padding-top: 60px;
    font-size: 2rem;
   }
- 
   .main-tittle h2 {
    font-size: 1.7rem;
   }
@@ -210,14 +202,11 @@ main {
     padding-top: 55px;
    font-size: 1.5rem;
   }
- 
   .main-tittle h2 {
    font-size: 1.2rem;
   }
 }
 
-
-/* Sobre */
 .sobre {
   max-width: 1100px;
   margin: 0 auto;
@@ -236,12 +225,11 @@ main {
 
 .sobre-content p {
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #7c7c7c;
   text-indent: 2rem;
   text-align: justify;
 }
-
 .sobre-img img{
   border-radius: 4px;
 }
@@ -250,9 +238,8 @@ main {
   .sobre {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding: 70px 50px 0px 50px;
+    padding: 70px 55px 0px 55px;
   }
-  
   .sobre-content h1 {
     font-size: 1.8rem;
     padding-bottom: 30px;
@@ -264,7 +251,7 @@ main {
   .sobre-img {
     margin: 0 auto;
     padding-top: 30px;
-    max-width: 50%;
+    max-width: 35%;
   }
 }
 
@@ -274,7 +261,6 @@ main {
     gap: 30px;
     padding: 70px 50px 50px 50px;
   }
-  
   .sobre-content h1 {
     font-size: 1.7rem;
     padding-bottom: 30px;
@@ -286,7 +272,7 @@ main {
   .sobre-img {
     margin: 0 auto;
     padding-top: 30px;
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 
@@ -296,19 +282,17 @@ main {
     gap: 30px;
     padding: 70px 40px 50px 40px;
   }
-  
   .sobre-content h1 {
     font-size: 1.5rem;
     padding-bottom: 30px;
   }
-  
   .sobre-content p {
     font-size: 1.1rem;
   }
   .sobre-img {
     margin: 0 auto;
     padding-top: 10px;
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 
@@ -318,12 +302,10 @@ main {
     gap: 30px;
     padding: 70px 30px 40px 30px;
   }
-  
   .sobre-content h1 {
     font-size: 1.3rem;
     padding-bottom: 15px;
   }
-  
   .sobre-content p {
     font-size: 1rem;
   }
@@ -333,8 +315,6 @@ main {
     max-width: 50%;
   }
 }
-
-/* Services */
 
 .services {
   max-width: 1100px;
@@ -386,14 +366,11 @@ main {
     padding: 70px 40px 0px 40px;
     padding-bottom: 80px;
   }
-
-
   .service-item h2::before {
     width: 7px;
     height: 18px;
     margin-right: 17px;
   }
-
   .service-item p {
     font-size: 1.1rem;
   }
@@ -407,53 +384,44 @@ main {
     padding: 70px 30px 0px 30px;
     padding-bottom: 90px;
   }
-
-
   .service-item h2::before {
     width: 7px;
     height: 18px;
     margin-right: 17px;
   }
-
   .service-item p {
     font-size: 1.1rem;
   }
 }
-
 @media (max-width: 500px) {
   .services {
     padding: 70px 30px 0px 30px;
     padding-bottom: 100px;
   }
-
   .service-item h2 {
     font-size: 1.1rem;
     margin-bottom: 10px;
   }
-
   .service-item h2::before {
     width: 6px;
     height: 13px;
     margin-right: 13px;
   }
-
   .service-item p {
     font-size: 1rem;
   }
 }
 
-/* Footer */
+
 footer {
   background: #FA82A6;
   display: block;
   align-items: center;
 }
-
 footer p {
   text-align: center;
   padding: 20px 0;
 }
-
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -462,21 +430,17 @@ footer p {
   margin: 0 auto;
   padding-top: 70px;
 }
-
 .footer-iten {
   display: flex;
   padding: 10px 0;
 }
-
 .footer-iten a {
   color: #1E1D1D;
   cursor: pointer;
 }
-
 .footer-iten a:hover {
   color: #fff;
 }
-
 .icon {
   width: 20px;
   height: 20px;
@@ -534,10 +498,8 @@ footer p {
     height: 15px;
     margin-right: 10px;
   }
-
   footer p {
     padding: 20px 0;
     font-size: .6rem;
   }
-
 }
