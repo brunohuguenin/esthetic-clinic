@@ -28,13 +28,12 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 15px;
-  padding: 10px;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu img {
-  max-width: 25%;
+.logo {
+  max-width: 40%;
 }
 
  .menu ul {
@@ -115,7 +114,7 @@ header {
     right: 0;
     background: #FA82A6;
     height: 130px;
-    top: 54px;
+    top: 60px;
     position: absolute;
     animation: dropdownMenu .10s;
    }   
