@@ -26,15 +26,11 @@ header {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 15px;
   padding: 10px;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  color: #fff;
 }
 
 .menu img {
@@ -53,7 +49,6 @@ header {
   font-weight: bold;
   color: #fff;
   font-family: sans-serif;
-  
  }
 
  nav a:hover {
@@ -78,19 +73,19 @@ header {
     padding: 0 50px;
   }
   #nav  a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
  }
  
  @media (min-width: 601px) and (max-width: 768px) {
   .menu {
-    padding: 0 35px;
+    padding: 0 30px;
   }
   #nav  a {
     font-size: 1rem;
+    flex-wrap: nowrap;
   }
 }
-
 
  @media (max-width: 600px) {
   .menu {
@@ -100,6 +95,7 @@ header {
     padding: 5px 0;
     display: flex;
     justify-content: flex-end;
+    align-items: end;
   }
   #button-mobile {
     display: block;
@@ -109,7 +105,6 @@ header {
     border: none;
     box-shadow: 0 6px #fff, 0 -6px #fff;
     transition: transform .3s;
-    
    }
    #button-mobile.active {
    transform: rotate(90deg); 
@@ -120,9 +115,9 @@ header {
     right: 0;
     background: #FA82A6;
     height: 130px;
-    top: 65px;
+    top: 54px;
     position: absolute;
-    animation: dropdownMenu .5s;
+    animation: dropdownMenu .10s;
    }   
    #nav.active #menu-list {
     display: block;
@@ -136,11 +131,16 @@ header {
     }
    }
    #nav.active #menu-list a {
-    padding: 0 0 10px 10px;
-    font-size: 1.2rem;
+    padding: 15px 0 0px 10px;
+    font-size: 1rem;
   }
  }
 
+ @media (max-width: 500px) {
+  #menu-list {
+    top: 43px;
+  }
+}
 main {
   background: #F4E2E5;
 }
@@ -439,24 +439,23 @@ main {
 
 footer {
   background: #FA82A6;
-  display: block;
-  align-items: center;
 }
 footer p {
   text-align: center;
   padding: 20px 0;
 }
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  align-items: center;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .footer-iten {
   display: flex;
   padding: 10px 0;
+  padding-left: 70px;
+  align-items: center;
 }
 .footer-iten a {
   color: #1E1D1D;
@@ -471,59 +470,28 @@ footer p {
   margin-right: 10px;
 }
 
-@media (min-width: 730px) and (max-width: 970px) {
+@media (min-width: 600px) and (max-width: 770px){
   .footer-content {
-    padding-top: 60px;
-    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding-top: 40px;
   }
   .footer-iten {
-    font-size: 1rem;
-  }
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  footer p {
-    padding: 30px 0;
-    font-size: .9rem;
+    padding-left: 30px;
   }
 }
 
-@media (min-width: 501px) and (max-width: 730px) {
+@media (max-width: 599px){
   .footer-content {
-    padding-top: 50px;
-    margin: 0 40px;
+    max-width: 400px;
+    grid-template-columns: 1fr;
+    padding-top: 40px;
   }
   .footer-iten {
-    font-size: .9rem;
   }
-  .icon {
-    width: 17px;
-    height: 17px;
-    margin-right: 10px;
-  }
-  footer p {
-    padding: 30px 0;
-    font-size: .8rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer-content {
-    padding-top: 50px;
-    margin: 0 30px;
-  }
-  .footer-iten {
-    font-size: .7rem;
-  }
-  .icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
-  footer p {
-    padding: 20px 0;
-    font-size: .6rem;
+  .footer-iten a {
+    color: #1E1D1D;
+    cursor: pointer;
   }
 }
