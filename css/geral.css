@@ -488,10 +488,16 @@ footer p {
     grid-template-columns: 1fr;
     padding-top: 40px;
   }
-  .footer-iten {
+  .icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
   }
+  
   .footer-iten a {
-    color: #1E1D1D;
-    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  footer p {
+    font-size: .7rem;
   }
 }
