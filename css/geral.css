@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-  max-width: 40%;
+  max-width: 50%;
 }
 
  .menu ul {
@@ -90,6 +90,9 @@ header {
   .menu {
     padding: 0 25px;
   }
+  .logo {
+    max-width: 80%;
+  }
   nav {
     padding: 5px 0;
     display: flex;
@@ -136,8 +139,9 @@ header {
  }
 
  @media (max-width: 500px) {
+  
   #menu-list {
-    top: 43px;
+    top: 97px;
   }
 }
 main {
